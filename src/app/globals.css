@@ -107,7 +107,7 @@ h6 {
 .animated-button {
   @apply cursor-pointer bg-gradient-to-b bg-black 
          px-6 py-2 rounded-md border 
-         text-white font-medium relative overflow-hidden;
+         text-white font-medium relative overflow-hidden max-w-fit;
 }
 
 .button-inner {

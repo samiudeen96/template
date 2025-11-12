@@ -64,6 +64,7 @@ import { card1 } from "@/lib/constant";
 import Image from "next/image";
 import React from "react";
 import Card from "./Card";
+import Button from "./Button";
 
 const FeaturedWork = () => {
   return (
@@ -81,9 +82,9 @@ const FeaturedWork = () => {
             design.
           </p>
 
-          <button className="button mt-6 sm:mt-8 lg:mt-10 text-sm sm:text-base">
-            SEE ALL WORK
-          </button>
+          <div className="mt-6">
+            <Button>SEE ALL WORK</Button>
+          </div>
 
           <div className="border-b my-8 xl:hidden"></div>
         </div>

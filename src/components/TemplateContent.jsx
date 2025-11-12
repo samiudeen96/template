@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 const TemplateContent = ({ content }) => {
   return (
@@ -18,10 +19,13 @@ const TemplateContent = ({ content }) => {
 
       <div className="border"></div>
 
-      <div className="lg:w-4/12 h-96 text-2xl flex flex-col justify-between">
-        {content.text2}
+      <div className="lg:w-4/12 h-96  flex flex-col justify-between">
+        <p className="text-2xl">{content.text2}</p>
 
-        <button className="button">{content.buttonText}</button>
+        {/* <button className="button">{content.buttonText}</button> */}
+        {/* <div className="mt-6"> */}
+            <Button>{content.buttonText}</Button>
+          {/* </div> */}
       </div>
     </div>
   );
