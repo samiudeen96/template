@@ -8,7 +8,6 @@ import Button from "./Button";
 const Header = () => {
   const [IsOpen, SetIsOpen] = useState(false);
 
-  const showMenu = () => {};
 
   return (
     <div className=" pb-8 flex items-center justify-between">
@@ -18,7 +17,7 @@ const Header = () => {
       </div>
 
       <div className="flex gap-6">
-        <ul className="lg:flex items-center gap-6 text-[14px] hidden ">
+        <ul className="lg:flex items-center gap-6 hidden ">
           {menu.map((item, index) => (
             <li key={index}>{item.label}</li>
           ))}

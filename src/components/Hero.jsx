@@ -8,7 +8,7 @@ const Hero = () => {
         {/* Left content */}
         <div className="flex xl:flex-col justify-between flex-col-reverse">
           <div>
-            <h1 className="mt-12">We are a digital agency from Lisbon.</h1>
+            <h1 className="mt-8">We are a digital agency from Lisbon.</h1>
             <p className="mt-6 text-2xl">
               Elevating brands through creative digital solutions, proudly
               representing Lisbon's vibrant innovation.
@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
 
         {/* Right image */}
-        <div className="xl:mt-12">
+        <div className="mt-8">
           <Image
             className="rounded-[16px] w-full h-auto object-cover"
             src="/hero.svg"
