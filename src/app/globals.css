@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
+/* Global Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Font variables from next/font */
+  --font-syne: var(--font-syne);
+  --font-robotoMono: var(--font-roboto-mono);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* Light & Dark mode */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Satoshi", sans-serif; /* Default Syne */
 }
+
+/* Headings - use Syne */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 500;
+}
+
+/* Code blocks - use Roboto Mono
+code, pre {
+  font-family: var(--font-robotoMono), monospace;
+} */
+
+/* Example section class */
+.section {
+  @apply py-10 border-t;
+}
+
+h1 {
+  @apply text-7xl;
+}
+
+h2 {
+  @apply text-6xl;
+}
+
+h4 {
+  @apply text-3xl;
+  font-family: var(--font-syne), sans-serif;
+}
+
+h5 {
+  @apply text-2xl;
+}
+
+h6 {
+  @apply text-lg;
+  font-family: var(--font-roboto-mono), sans-serif;
+  font-weight: 400;
+  /* color: red; */
+}
+
+.font-syne {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 500;
+  /* color: red; */
+}
+
+.button {
+  @apply bg-black px-6 py-2 text-white text-base rounded-md cursor-pointer transition-all duration-300 max-w-fit;
+  font-family: "Satoshi", sans-serif;
+  font-weight: medium;
+}
+
+.button1 {
+  @apply px-6 py-2 border text-base rounded-md cursor-pointer transition-all duration-300 max-w-fit;
+  font-family: "Satoshi", sans-serif;
+  font-weight: medium;
+}
+
+.button:hover {
+  @apply bg-neutral-800 scale-105;
+}
+
+
