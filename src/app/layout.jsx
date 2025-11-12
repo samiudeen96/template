@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${syne.variable} ${robotoMono.variable} antialiased h-full 
+        className={`${syne.variable} ${robotoMono.variable} relative antialiased h-full 
           px-4 py-4 sm:px-6 sm:py-6 lg:px-12 lg:py-8 
           m-2 sm:m-4 border`}
       >
