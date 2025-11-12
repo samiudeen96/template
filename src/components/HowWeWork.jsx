@@ -8,7 +8,7 @@ const HowWeWork = () => {
     text2:
       "Through careful analysis, creative thinking, and a deep understanding of their goals, we empower businesses to surpass expectations and thrive in today's dynamic and competitive landscape.",
     buttonText: "OUR SERVICES",
-    image: "/whatwedo/Vector4.svg",
+    image: "/whatwedo/vector4.svg",
   };
 
   return (

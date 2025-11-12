@@ -8,7 +8,7 @@ const Contact = () => {
     text2:
       "Together, let's elevate your brand to new heights by unleashing its full potential and captivating your target audience.",
     buttonText: "GET IN TOUCH",
-    image: "/whatwedo/Vector2.svg",
+    image: "/whatwedo/vector2.svg",
   };
 
   return (

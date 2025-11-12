@@ -44,32 +44,32 @@ export const media = [
 
 export const slider = [
   {
-    image: "/slider/Group 1.svg",
+    image: "/slider/group 1.svg",
     height: 60,
     width: 60,
   },
   {
-    image: "/slider/Group 2.svg",
+    image: "/slider/group 2.svg",
     height: 60,
     width: 60,
   },
   {
-    image: "/slider/Group 3.svg",
+    image: "/slider/group 3.svg",
     height: 60,
     width: 60,
   },
   {
-    image: "/slider/Group 7.svg",
+    image: "/slider/group 7.svg",
     height: 60,
     width: 60,
   },
   {
-    image: "/slider/Group 8.svg",
+    image: "/slider/group 8.svg",
     height: 60,
     width: 100,
   },
   {
-    image: "/slider/Group 9.svg",
+    image: "/slider/group 9.svg",
     height: 60,
     width: 60,
   },
