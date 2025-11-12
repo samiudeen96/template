@@ -51,44 +51,43 @@ h5 {
   font-weight: 500;
 }
 
-/* Code blocks - use Roboto Mono
-code, pre {
-  font-family: var(--font-robotoMono), monospace;
-} */
-
-/* Example section class */
+/* Section spacing */
 .section {
   @apply py-10 border-t;
 }
 
+/* Headings responsive */
 h1 {
-  @apply text-7xl;
+  @apply text-4xl md:text-5xl lg:text-7xl; /* scales on larger screens */
 }
 
 h2 {
-  @apply text-6xl;
+  @apply text-3xl md:text-4xl lg:text-6xl;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl lg:text-5xl;
 }
 
 h4 {
-  @apply text-3xl;
+  @apply text-xl md:text-2xl lg:text-3xl;
   font-family: var(--font-syne), sans-serif;
 }
 
 h5 {
-  @apply text-2xl;
+  @apply text-lg md:text-xl lg:text-2xl;
 }
 
 h6 {
-  @apply text-lg;
-  font-family: var(--font-roboto-mono), sans-serif;
+  @apply text-base md:text-lg lg:text-lg;
+  font-family: var(--font-roboto-mono), monospace;
   font-weight: 400;
-  /* color: red; */
 }
 
+/* Utility font class */
 .font-syne {
   font-family: var(--font-syne), sans-serif;
   font-weight: 500;
-  /* color: red; */
 }
 
 .button {
@@ -96,15 +95,11 @@ h6 {
   font-family: "Satoshi", sans-serif;
   font-weight: medium;
 }
-
 .button1 {
   @apply px-6 py-2 border text-base rounded-md cursor-pointer transition-all duration-300 max-w-fit;
   font-family: "Satoshi", sans-serif;
   font-weight: medium;
 }
-
 .button:hover {
   @apply bg-neutral-800 scale-105;
 }
-
-

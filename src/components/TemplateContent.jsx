@@ -3,11 +3,11 @@ import React from "react";
 
 const TemplateContent = ({ content }) => {
   return (
-    <div className="section flex justify-between">
-      <div className="w-7/12 h-96 flex flex-col justify-between">
+    <div className="section justify-between flex flex-col lg:flex-row gap-8" >
+      <div className="lg:w-7/12 lg:h-96 flex flex-col justify-between md:gap-6">
         <div>
           <h6 className="">{content.title}</h6>
-          <h2 className="font-semibold text-5xl leading-tight">
+          <h2 className="mt-2">
             {content.text1}
           </h2>
         </div>
@@ -18,7 +18,7 @@ const TemplateContent = ({ content }) => {
 
       <div className="border"></div>
 
-      <div className="w-4/12 h-96 text-2xl flex flex-col justify-between">
+      <div className="lg:w-4/12 h-96 text-2xl flex flex-col justify-between">
         {content.text2}
 
         <button className="button">{content.buttonText}</button>

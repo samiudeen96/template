@@ -5,8 +5,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="section">
-      <div className="flex">
-        <div className="border-r w-4/12 h-60 flex flex-col justify-between">
+      <div className=" flex flex-col lg:flex-row">
+        <div className="lg:w-4/12 xl:h-60 gap-8 flex flex-col justify-between border-b lg:border-b-0 pb-8 lg:pb-0">
+
           <div>
             <div className="flex items-center content-center gap-4">
               <Image
@@ -33,10 +34,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-8/12">
-          <div className="grid grid-cols-3 ms-12">
-            <div>
-              <h5>Pages</h5>
+        <div className="lg:w-8/12 lg:border-l">
+          <div className="grid xl:grid-cols-3 grid-cols-1 lg:ms-12">
+            <div className="border-b xl:border-b-0 pb-8 xl:pb-0">
+              <h5 className="pt-8 lg:pt-0">Pages</h5>
               <ul className="flex flex-col gap-4 mt-6">
                 <li>HOME</li>
                 <li>SERVICES</li>
@@ -45,8 +46,8 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
-              <h5>CMS</h5>
+            <div className="border-b xl:border-b-0 pb-8 xl:pb-0">
+              <h5 className="pt-8 xl:pt-0">CMS</h5>
               <ul className="flex flex-col gap-4 mt-6">
                 <li>HOME</li>
                 <li>SERVICES</li>
@@ -55,7 +56,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="pt-8 xl:pt-0">
               <h5>Utility Pages</h5>
               <ul className="flex flex-col gap-4 mt-6">
                 <li>HOME</li>

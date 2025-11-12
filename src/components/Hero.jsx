@@ -4,38 +4,38 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="section">
-      <div className="flex justify-between">
-        <div className="flex flex-col justify-between h-full">
-          <div className="">
-            <h1 className="">
-              We are a digital <br /> agency from <br /> Lisbon.
-            </h1>
+      <div className="grid grid-cols-1 xl:grid-cols-2 justify-between gap-10">
+        {/* Left content */}
+        <div className="flex xl:flex-col justify-between flex-col-reverse">
+          <div>
+            <h1 className="mt-12">We are a digital agency from Lisbon.</h1>
             <p className="mt-6 text-2xl">
-              Elevating brands through creative digital solutions, <br />
-              proudly representing Lisbon's vibrant <br /> innovation.
+              Elevating brands through creative digital solutions, proudly
+              representing Lisbon's vibrant innovation.
             </p>
           </div>
-          <div>
+          <div className="mt-6 xl:mt-0">
             <Image
               src="/vector.svg"
-              alt="logo"
-              width={40}
-              height={50}
+              alt="vector icon"
+              width={60}
+              height={60}
               priority
             />
           </div>
         </div>
-      {/* </div>
 
-      <div className="flex-1"> */}
-        <Image
-          className="rounded-[16px]"
-          src="/hero.svg"
-          alt="logo"
-          width={650}
-          height={650}
-          priority
-        />
+        {/* Right image */}
+        <div className="xl:mt-12">
+          <Image
+            className="rounded-[16px] w-full h-auto object-cover"
+            src="/hero.svg"
+            alt="hero image"
+            width={550}
+            height={550}
+            priority
+          />
+        </div>
       </div>
     </div>
   );
