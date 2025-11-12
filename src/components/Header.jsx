@@ -52,7 +52,7 @@ const Header = () => {
         </div>
 
         {IsOpen && (
-          <div className="fixed inset-0 z-50 bg-white md:hidden flex flex-col transition-all duration-300">
+          <div className="fixed inset-0 z-50 bg-white lg:hidden flex flex-col transition-all duration-300">
             {/* Close Button */}
             <button
               onClick={() => SetIsOpen(false)}
