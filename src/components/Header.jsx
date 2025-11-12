@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { menu, media } from "@/lib/constant";
 import Link from "next/link";
+import Button from "./Button";
 
 const Header = () => {
   const [IsOpen, SetIsOpen] = useState(false);
@@ -23,7 +24,9 @@ const Header = () => {
           ))}
         </ul>
 
-        <button className="button md:block hidden">LET'S TALK</button>
+        <div className=" md:block hidden">
+          <Button>LET'S TALK</Button>
+        </div>
 
         <div className="border md:block hidden"></div>
 

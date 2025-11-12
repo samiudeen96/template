@@ -103,3 +103,38 @@ h6 {
 .button:hover {
   @apply bg-neutral-800 scale-105;
 }
+
+.animated-button {
+  @apply cursor-pointer bg-gradient-to-b bg-black 
+         px-6 py-2 rounded-md border 
+         text-white font-medium relative overflow-hidden;
+}
+
+.button-inner {
+  @apply relative overflow-hidden;
+}
+
+.button-text,
+.button-text-hover {
+  @apply transition-all;
+  transition-duration: 1125ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  margin: 0;
+}
+
+.button-text {
+  @apply relative;
+}
+
+.button-text-hover {
+  @apply absolute left-0;
+  top: 1.75rem; /* approximate top-7 in Tailwind */
+}
+
+.animated-button:hover .button-text {
+  transform: translateY(-1.75rem); /* same as -translate-y-7 */
+}
+
+.animated-button:hover .button-text-hover {
+  top: 0;
+}
