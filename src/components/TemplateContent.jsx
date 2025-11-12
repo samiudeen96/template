@@ -5,7 +5,7 @@ import Button from "./Button";
 const TemplateContent = ({ content }) => {
   return (
     <div className="section justify-between flex flex-col lg:flex-row gap-8" >
-      <div className="lg:w-7/12 lg:h-96 flex flex-col justify-between md:gap-6">
+      <div className="lg:w-7/12 lg:h-96 flex flex-col justify-between gap-8">
         <div>
           <h6 className="">{content.title}</h6>
           <h2 className="mt-2">
@@ -19,7 +19,7 @@ const TemplateContent = ({ content }) => {
 
       <div className="border"></div>
 
-      <div className="lg:w-4/12 h-96  flex flex-col justify-between">
+      <div className="lg:w-4/12 lg:h-96  flex flex-col justify-between gap-8">
         <p className="text-2xl">{content.text2}</p>
 
         {/* <button className="button">{content.buttonText}</button> */}
